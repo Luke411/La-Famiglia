@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Post One</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i>La</span> Famiglia</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+</div>
+<div class="content">
+  <h1>Blog</h1>
+  
+</div>
+  </header>
+  <main>
+    <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta"><i class="fas fa-user"></i>Posted by <strong>Harry Potter</strong> | April 19 2020</p>
+        <img src="/images/blog/blog5.jpg" alt="">
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse minus molestias voluptatem eaque. Dolor id odio accusamus vitae, repellendus aliquid a facilis earum labore. Quibusdam impedit harum excepturi ratione hic?</p>
+             <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat incidunt, aut laboriosam, numquam impedit omnis modi doloremque nemo et quae asperiores. Cupiditate excepturi eius fugit, doloribus nemo provident velit quaerat nihil sapiente id cum molestiae eum. Repellendus quo enim corrupti, labore repudiandae impedit possimus sed dolore veniam dignissimos quae architecto. Et tempora quidem quibusdam perspiciatis non temporibus accusamus ducimus tempore.
+             </p>
+             <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est unde nihil. Autem modi dolorum tempora! Accusamus sint ipsam quia minima, laborum, corrupti non ea eum, id laudantium commodi vel! Quos nostrum error dolor esse quaerat debitis deleniti earum corrupti, eaque perspiciatis temporibus dicta? Mollitia vitae consequatur magnam in est omnis enim nam, voluptates expedita cum laudantium quam facilis?
+             </p>
+
+    </section>
+  </main>
+
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/isabelle.pesa"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/411luke"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/watch?v=9u8_d55HPew"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.youtube.com/watch?v=7l1CbR3tC4I"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - La Famiglia</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+      if(window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if(!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+      }
+      setTimeout(function() {
+        navbar.style.transform = 'translateY(0)';
+        scrolled = true;
+      }, 200);
+    } else {
+        navbar.classList.add('top');
+        scrolled = false;
+    }
+    };
+  </script>
+</body>
+</html>
